@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test din afhængighed - Rygestop</title>
+    <link rel="stylesheet" href="style-test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">KURSER</a>
+            <a href="#" class="active">TEST DIG SELV</a>
+            <a href="#">UDTAGELSER</a>
+            <a href="#">TIPS & RÅD</a>
+        </div>
+    </nav>
+
+    <main class="test-container">
+        <header class="test-header">
+            <h1>TEST DIN AFHÆNGIGHED PÅ 1 MINUT</h1>
+        </header>
+
+        <form id="addiction-test">
+            <section class="question-block">
+                <h2>Hvor hurtigt ryger du din første cigaret efter opvågning?</h2>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q1" value="0"> <span>0 = Efter 60 min</span></label>
+                    <label class="option"><input type="radio" name="q1" value="1"> <span>1 = 31–60 min</span></label>
+                    <label class="option"><input type="radio" name="q1" value="2"> <span>2 = 6–30 min</span></label>
+                    <label class="option"><input type="radio" name="q1" value="3"> <span>3 = Inden for 5 min</span></label>
+                </div>
+            </section>
+
+            <section class="question-block">
+                <h2>Har du svært ved at lade være med at ryge steder, hvor det er forbudt?</h2>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q2" value="0"> <span>0 = Nej</span></label>
+                    <label class="option"><input type="radio" name="q2" value="1"> <span>1 = Ja</span></label>
+                </div>
+            </section>
+
+            <section class="question-block">
+                <h2>Hvilken cigaret ville være sværest at undvære?</h2>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q3" value="0"> <span>0 = En anden end den om morgenen</span></label>
+                    <label class="option"><input type="radio" name="q3" value="1"> <span>1 = Den om morgenen</span></label>
+                </div>
+            </section>
+
+            <section class="question-block">
+                <h2>Hvor mange cigaretter ryger du dagligt?</h2>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q4" value="0"> <span>0 = 10 eller færre</span></label>
+                    <label class="option"><input type="radio" name="q4" value="1"> <span>1 = 11 - 20</span></label>
+                    <label class="option"><input type="radio" name="q4" value="2"> <span>2 = 21 - 30</span></label>
+                    <label class="option"><input type="radio" name="q4" value="3"> <span>3 = over 30</span></label>
+                </div>
+            </section>
+
+            <section class="question-block">
+                <h2>Ryger du mere om morgenen end senere på dagen?</h2>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q5" value="0"> <span>0 = Nej</span></label>
+                    <label class="option"><input type="radio" name="q5" value="1"> <span>1 = Ja</span></label>
+                </div>
+            </section>
+
+            <section class="question-block">
+                <h2>Ryger du, selv når du er syg og ligger i sengen?</h2>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q6" value="0"> <span>0 = Nej</span></label>
+                    <label class="option"><input type="radio" name="q6" value="1"> <span>1 = Ja</span></label>
+                </div>
+            </section>
+
+            <section class="results-box">
+                <div class="results-content">
+                    <h3>Point: Læg tallene sammen.</h3>
+                    <p><strong>Resultat:</strong></p>
+                    <ul>
+                        <li>0–2: Lav afhængighed</li>
+                        <li>3–4: Moderat afhængighed</li>
+                        <li>5–6: Høj afhængighed</li>
+                        <li>7+: Meget høj afhængighed</li>
+                    </ul>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-info">
+            <p>Dette side er til undervisningsbrug</p>
+            <address>
+                Herning kommune:<br>
+                Torvet 5, 7400 Herning<br>
+                CVR: 29 18 99 19
+            </address>
+        </div>
+        <div class="footer-socials">
+            <img src="https://placehold.co/36x36" alt="Social">
+            <img src="https://placehold.co/36x36" alt="Social">
+            <img src="https://placehold.co/36x36" alt="Social">
+        </div>
+    </footer>
+
+</body>
+</html>
