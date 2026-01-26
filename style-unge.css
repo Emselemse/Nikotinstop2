@@ -80,7 +80,17 @@ body {
     font-size: 80px;
     color: #ffffff; /* Hvid tekst */
     -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* Sort kant */
-    margin: 60px 0;             /* Top og bundmargin */     
+    /* Reduced spacing so the following section-heading sits directly under */
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Styling for the section heading that should appear right under the main title */
+.section-heading {
+    font-size: 24px;
+    color: #141414;
+    text-align: center;
+    margin: 0 0 18px; /* no top gap, small bottom gap */
 }
 
 /* Container til udtalelser */
