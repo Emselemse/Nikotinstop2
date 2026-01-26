@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9DC98;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+/* NAVIGATION */
+.navbar {
+    background-color: #141414;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar b {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px 120px;
+}
+
+.hero h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 96px;
+    /* Thinner stroke under 1px for 'Tips & råd' */
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0); /* Sort kant */
+}
+
+.hero h2 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 48px;
+    color: black;
+}
+
+/* SECTION LAYOUT */
+.section {
+    position: relative;
+    max-width: 1100px;
+    /* Reduced top margin to bring the orange card closer to the header */
+    margin: 80px auto;
+}
+
+/* CARD */
+.card {
+    width: 65%;
+    padding: 70px;
+    border-radius: 20px;
+}
+
+.card h3 {
+    font-size: 56px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+/* FARVER */
+.orange { background: #CD7E2F; }
+.green  { background: #ACBFAC; }
+.purple { background: #35233B; }
+
+/* HØJRE JUSTERET CARD (som midtersektionen) */
+.right-align {
+    margin-left: auto;
+    text-align: right;
+}
+
+/* ILLUSTRATION */
+.illustration {
+    position: absolute;
+    /* Lift illustrations closer to the section/header */
+    bottom: -20px;
+    max-height: 520px;
+    z-index: 2;
+}
+
+/* Placering */
+.illustration.right {
+    right: -140px;
+}
+
+.illustration.left {
+    left: -140px;
+}
+
+/* Flyt kun den fulde mand (i den sidste sektion) tættere på det purple kort */
+.section:last-of-type .illustration.right {
+    /* mindre negativ højre-offset trækker billedet ind mod kortet */
+    right: -3px;
+    /* juster lodret hvis nødvendigt */
+    bottom: -3px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #780001;
+    color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-info p, .footer-info address {
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.footer-socials {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Mobil-tilpasning */
+@media (max-width: 768px) {
+    .nav-links { gap: 20px; }
+    .test-header h1 { font-size: 32px; }
+    .question-block h2 { font-size: 24px; }
+    .option { font-size: 20px; }
+    .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
+}

@@ -1,0 +1,148 @@
+/* Grundlæggende indstillinger */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9DC98;
+    font-family: 'JetBrains Mono', monospace;
+        background-image: url('placeholder.png'); /* Billede ovenpå */
+  background-repeat: no-repeat;                 /* Ingen gentagelse */  
+  background-position: center; /* Centreret */
+  /* Tilpas størrelse */
+  background-size: contain;                 
+}
+
+/* Header/Navigation */
+.main-header {
+    background: #141414;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-header ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.main-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.main-header b {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* Overskrift */
+.hero-title {
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff; /* Hvid tekst */
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* Sort kant */
+    margin: 60px 0;             /* Top og bundmargin */     
+}
+
+/* Container til udtalelser */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Kort Styling */
+.card {
+    background-color: #ACBFAC;
+    width: 60%; /* Kortet fylder 60% af bredden */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Zig-zag placering */
+.card.left {
+    align-self: flex-start; /* Skubber til venstre */
+}
+
+.card.right {
+    align-self: flex-end; /* Skubber til højre */
+}
+
+/* Tekst i kort */
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 24px;
+}
+
+.author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #780001;
+    color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-info p, .footer-info address {
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.footer-socials {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Mobil-tilpasning */
+@media (max-width: 768px) {
+    .nav-links { gap: 20px; }
+    .test-header h1 { font-size: 32px; }
+    .question-block h2 { font-size: 24px; }
+    .option { font-size: 20px; }
+    .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
+}

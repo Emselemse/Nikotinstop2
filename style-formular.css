@@ -1,0 +1,157 @@
+/* Grundlæggende styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9DC98;
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #141414;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar b {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hovedindhold */
+.content-wrapper {
+    flex: 1;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #780001;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Formular boks */
+.form-container {
+    background-color: #ACBFAC;
+    border-radius: 50px;
+    padding: 60px;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Input felter */
+.input-group {
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    max-width: 800px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 40px;
+    font-size: 24px;
+    font-family: 'Jacques Francois', serif;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #989696;
+}
+
+/* Knap */
+.submit-btn {
+    width: 100%;
+    max-width: 800px;
+    height: 80px;
+    background-color: #780001;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 32px;
+    font-family: 'Jacques Francois', serif;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* Info linje i bunden af form */
+.info-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    font-family: 'Jacques Francois', serif;
+    font-size: 24px;
+}
+
+
+/* Footer */
+.main-footer {
+    background-color: #780001;
+    color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-info p, .footer-info address {
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.footer-socials {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Mobil-tilpasning */
+@media (max-width: 768px) {
+    .nav-links { gap: 20px; }
+    .test-header h1 { font-size: 32px; }
+    .question-block h2 { font-size: 24px; }
+    .option { font-size: 20px; }
+    .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
+}

@@ -10,7 +10,6 @@ body {
     font-family: 'JetBrains Mono', monospace;
     color: #141414;
 }
-
 /* Navigation */
 .navbar {
     background-color: #141414;
@@ -134,21 +133,35 @@ body {
 /* Footer */
 .main-footer {
     background-color: #780001;
-    color: white;
+    color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     text-align: center;
-    padding: 60px 20px;
     margin-top: 100px;
 }
 
-.main-footer p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.footer-info p, .footer-info address {
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
 }
 
-/* Responsiv tilpasning til små skærme */
+.footer-socials {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Mobil-tilpasning */
 @media (max-width: 768px) {
-    .navbar { gap: 20px; }
-    .navbar a { font-size: 1rem; }
-    .question-block h2 { font-size: 1.5rem; }
-    .option { font-size: 1.2rem; }
+    .nav-links { gap: 20px; }
+    .test-header h1 { font-size: 32px; }
+    .question-block h2 { font-size: 24px; }
+    .option { font-size: 20px; }
+    .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
 }
