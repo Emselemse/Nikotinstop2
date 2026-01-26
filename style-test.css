@@ -1,0 +1,154 @@
+/* Nulstil standard margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9DC98;
+    font-family: 'JetBrains Mono', monospace;
+    color: #141414;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #141414;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar b {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero sektion */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #141414; /* Ændret fra hvid til sort for læsbarhed på gul baggrund */
+}
+
+/* Spørgsmål */
+.addiction-test {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.question-block {
+    margin-bottom: 80px;
+}
+
+.question-block h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.8rem;
+}
+
+/* Styling af de firkantede "tjekbokse" (radio buttons) */
+.option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.option input[type="radio"]:checked::after {
+    content: "X";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Resultat boks */
+.result-container {
+    background-color: #780001;
+    color: white;
+    padding: 60px;
+    margin: 100px 0;
+    border-radius: 8px;
+}
+
+.result-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.result-content p {
+    font-size: 2rem;
+}
+
+.result-content ul {
+    list-style: none;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #780001;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 100px;
+}
+
+.main-footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsiv tilpasning til små skærme */
+@media (max-width: 768px) {
+    .navbar { gap: 20px; }
+    .navbar a { font-size: 1rem; }
+    .question-block h2 { font-size: 1.5rem; }
+    .option { font-size: 1.2rem; }
+}
