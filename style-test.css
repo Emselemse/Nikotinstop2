@@ -129,6 +129,22 @@ body {
     font-size: 1.8rem;
     margin-top: 20px;
 }
+.btn-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #780001;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, ease;
+}
+.btn-cta:hover {
+    background-color: #350000;
+    color: #ffffff;
+}
 
 /* Footer */
 .main-footer {
