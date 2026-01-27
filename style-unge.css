@@ -17,7 +17,9 @@ body {
 /* Navigation */
 .navbar {
     background-color: #141414;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 30px 20px;
     display: flex;
     justify-content: center;

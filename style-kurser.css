@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F9DC98;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+
+.bg-image-1 {
+    /* Make large decorative background fixed to the viewport so it doesn't extend page height */
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    max-width: none;
+    z-index: -1;
+    pointer-events: none; /* tillader klik at gå igennem baggrunden */
+}
+
+/* Navigation */
+.navbar {
+    background-color: #141414;
+    /* Make navbar sticky at top of viewport*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar b {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.site-logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: auto;
+}
+
+.title {
+    color: white;
+    font-size: 100px;
+    margin: 80px 0 40px 60px;
+
+}
+
+.card {
+    background: #CD7E2F;
+    color: white;
+    padding: 40px;
+    width: 830px;
+    margin: 60px 0;
+}
+
+.card h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.card li {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta {
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.individual { margin-left: 64px; }
+.group { margin-left: 554px; }
+.medicine { margin-left: 64px; }
+
+/* Footer */
+.main-footer {
+    background-color: #780001;
+    color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-info p, .footer-info address {
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.footer-socials {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Mobil-tilpasning */
+@media (max-width: 768px) {
+    .nav-links { gap: 20px; }
+    .test-header h1 { font-size: 32px; }
+    .question-block h2 { font-size: 24px; }
+    .option { font-size: 20px; }
+    .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
+}
+
+/* Kurser page: zig-zag card layout */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* default center so small screens look good */
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Reset any hard-coded left-margins used previously for individual/group/medicine cards */
+.page .card.individual,
+.page .card.group,
+.page .card.medicine {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Alternate .course wrappers left / right so the header + card move together */
+.page .course {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.page .course:nth-of-type(odd) {
+    align-self: flex-start;
+    align-items: flex-start;
+}
+.page .course:nth-of-type(even) {
+    align-self: flex-end;
+    align-items: flex-end; /* make the header align with the card on the right */
+}
+
+/* Header above each card */
+.card-header {
+    display: inline-block;
+    background: #CD7E2F; /* keep the site's accent behind the header */
+    padding: 8px 22px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.card-header h2 {
+    margin: 0;
+    color: #ffffff; /* white text */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page .card {
+    width: 830px; 
+}
+
+@media (max-width: 900px) {
+    .page {
+        align-items: center; /* stack centered on small screens */
+        padding: 12px;
+    }
+    .page .card,
+    .page .card.individual,
+    .page .card.group,
+    .page .card.medicine {
+        width: 95%;
+        align-self: center !important;
+        margin: 20px 0;
+    }
+}
