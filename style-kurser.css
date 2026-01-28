@@ -84,7 +84,7 @@ body {
     margin-top: 20px;
     border-radius: 12px;
     margin-left: 800px;
-    object-fit: cover;
+    object-fit: fill;
 }
 .illustration-course2 {
     width: 512px;
