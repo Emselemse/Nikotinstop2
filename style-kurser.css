@@ -79,20 +79,18 @@ body {
     align-items: flex-end; /* make the header align with the card on the right */
 }
 .illustration-course {
-    width: 512px;
-    height: 384px;
-    margin-top: 20px;
     border-radius: 12px;
     margin-left: 800px;
-    object-fit: fill;
+    margin-top: -600px;
+    object-fit: cover;
+    margin-bottom: -50px;
 }
 .illustration-course2 {
-    width: 512px;
-    height: 384px;
-    margin-top: 20px;
     border-radius: 12px;
     margin-right: 800px;
+    margin-top: -300px;
     object-fit: cover;
+    margin-bottom: -90px;
 }
 
 /* Header above each card */
