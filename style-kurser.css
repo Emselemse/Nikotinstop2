@@ -172,9 +172,9 @@ body {
 
 .cta {
     font-size: 36px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
-    -webkit-text-stroke: #141414;
+    -webkit-text-stroke: #000000;
 }
 
 /* Footer */

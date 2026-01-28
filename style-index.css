@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9DC98;
+    font-family: 'JetBrains Mono', monospace;
+    color: #141414;
+}
+/* Navigation */
+.navbar {
+    background-color: #141414;
+    /* Make navbar sticky at top of viewport (except index) */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar b {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.site-logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #8b0000; /* deep retro red */
+  color: #ffffff;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  border: none;
+    position: absolute;
+  right: 8%;
+  bottom: 20%;
+}
+
+.cta-button:hover {
+  background-color: #a00000;
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+}
