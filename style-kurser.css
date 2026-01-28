@@ -92,6 +92,12 @@ body {
     object-fit: cover;
     margin-bottom: -90px;
 }
+@media (max-width: 768px) {
+    .illustration-course,
+    .illustration-course2 {
+        display: none;
+    }
+}
 
 /* Header above each card */
 .card-header {
