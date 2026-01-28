@@ -45,28 +45,34 @@ body {
 }
 
 .cta-button {
-  display: inline-block;
-  background-color: #8b0000; /* deep retro red */
-  color: #ffffff;
-
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2rem;
-  letter-spacing: 0.15em;
+  position: absolute;
+  left: 1600px;
+  top: 80%; /* adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: #800000;
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 64px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.2;
-  padding: 1.2rem 2rem;
-  text-decoration: none;
-  border: none;
-    position: absolute;
-  right: 8%;
-  bottom: 20%;
+  padding: 8px 16px;
+  box-shadow: 0 0 0 2px #800000;
 }
 
 .cta-button:hover {
   background-color: #a00000;
 }
 .hero-section {
-  position: relative;
   height: 100vh;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 100vh;
+  overflow: hidden;
+  margin-bottom: -50px;
 }
