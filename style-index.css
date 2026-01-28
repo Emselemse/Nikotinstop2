@@ -45,9 +45,9 @@ body {
 }
 
 .cta-button {
-  position: absolute;
-  left: 1600px;
-  top: 80%; /* adjust as needed */
+position: absolute;
+  left: 80%;
+  top: 80%;
   transform: translate(-50%, -50%);
   z-index: 10;
   background: #800000;
@@ -67,12 +67,13 @@ body {
 .hero-section {
   height: 100vh;
   position: relative;
-  width: 100vw;
+  width: 100vw; 
+  width: fixed;
+  height: fixed;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  min-height: 100vh;
   overflow: hidden;
   margin-bottom: -50px;
 }
