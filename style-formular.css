@@ -130,6 +130,10 @@ input::placeholder {
     font-family: 'Jacques Francois', serif;
     font-size: 24px;
 }
+.info-footer img.check-icon {
+    width: 36px;
+    height: 36px;
+}
 
 
 /* Footer */

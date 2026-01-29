@@ -130,12 +130,12 @@ body {
     margin-top: 100px;
     font-family: 'Jacques Francois', serif;
     position: relative;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: 'Jacques Francois', serif;
     text-align: left;
 }
 .yellow-card h2 {
     font-size: 64px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: 'Jacques Francois', serif;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -157,7 +157,7 @@ body {
     color: #fff;
     text-align: right;
     margin-bottom: 32px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
 }
 .yellow-card ul {
     list-style: none;
@@ -169,13 +169,13 @@ body {
     font-size: 32px;
     color: #fff;
     margin-bottom: 12px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
 }
 .yellow-card .yellow-cta {
     font-size: 36px;
     color: #fff;
     text-decoration: underline;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
     letter-spacing: 2px;
     text-align: right;
     display: block;
@@ -199,14 +199,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
     position: relative;
     transform: translateX(120%);
     margin-top: 100px;
 }
 .red-card h2 {
     font-size: 40px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
     font-weight: bold;
     color: #e6e6e6;
     text-align: center;
@@ -219,7 +219,7 @@ body {
     font-size: 32px;
     color: #fff;
     margin-bottom: 40px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
     text-align: left;
     line-height: 1.4;
 }
@@ -238,7 +238,7 @@ body {
     font-size: 36px;
     color: #fff;
     text-decoration: underline;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
     letter-spacing: 2px;
     text-align: right;
     display: block;
@@ -260,7 +260,7 @@ body {
 }
 .purple-card {
     width: 678px;
-    height: 992px;
+    height: 500px;
     background: #35233B;
     color: #fff;
     border-radius: 12px;
@@ -273,25 +273,25 @@ body {
     text-align: center;
     transform: translateX(20%);
     margin-top: 100px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: Jacques Francois serif;
     position: relative;
 }
 
 .purple-card h2 {
-    font-size: 36px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+     font-size: 40px;
+    font-family: Jacques Francois serif;
     font-weight: bold;
-    color: #fff;
+    color: #e6e6e6;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     letter-spacing: 2px;
     text-shadow: 1px 1px 0 #000, 0 0 2px #fff;
-}
-
+    -webkit-text-stroke: 2px #000;
+} 
 .purple-card p {
-    font-size: 22px;
+    font-size: 32px;
     color: #fff;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: 'Jacques Francois', serif;
     text-align: center;
     margin-bottom: 120px;
 }
@@ -302,20 +302,29 @@ body {
 }
 
 .purple-card .purple-cta {
-    font-size: 22px;
+    font-size: 36px;
     color: #fff;
     text-decoration: underline;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    letter-spacing: 1px;
-    text-align: center;
+    font-family: Jacques Francois serif;
+    letter-spacing: 2px;
+    text-align: right;
     display: block;
-    margin-top: auto;
-    margin-bottom: 0;
+    margin-top: 32px;
+    margin-right: 0;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 1px 1px 0 #000;
     transition: color 0.2s;
 }
 
 .purple-card .purple-cta:hover {
     color: #e0c9ff;
+}
+.purple-card img {
+    position: absolute;
+    bottom: -50px;
+    right: -900px;
+    width: auto;
+    height: auto;
 }
 
 /* Responsive: scale down on small screens */
@@ -328,7 +337,7 @@ body {
         min-height: 320px;
         padding: 18px 10px;
     }
-    .yellow-card img{
+    .yellow-card img, .red-card img, .purple-card img {
         display: none;
     }
     .yellow-card h2 

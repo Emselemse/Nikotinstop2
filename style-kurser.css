@@ -164,10 +164,17 @@ body {
     font-size: 60px;
     font-weight: 700;
 }
+.card-header h3 {
+   display: none;
+}
 
 .card li {
     font-size: 36px;
     margin-bottom: 20px;
+}
+.card li img {
+    width: 36px;
+    height: 36px;
 }
 
 .cta {
@@ -211,4 +218,12 @@ body {
     .question-block h2 { font-size: 24px; }
     .option { font-size: 20px; }
     .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }

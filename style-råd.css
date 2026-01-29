@@ -117,7 +117,6 @@ body {
     left: -140px;
 }
 
-/* Flyt kun den fulde mand (i den sidste sektion) tættere på det purple kort */
 .section:last-of-type .illustration.right {
     /* mindre negativ højre-offset trækker billedet ind mod kortet */
     right: -3px;
