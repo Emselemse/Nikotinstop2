@@ -102,7 +102,7 @@ body {
     padding: 20px;
 }
 
-.testimonial-list {
+.Udtalelser-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -117,7 +117,7 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Zig-zag placering */
+/* Zig-zag placering -- fra CoPilot 2026*/
 .card.left {
     align-self: flex-start; /* Skubber til venstre */
 }

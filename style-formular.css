@@ -163,7 +163,7 @@ input::placeholder {
     gap: 25px;
 }
 
-
+/*fra CoPilot 2026*/
 /* Mobil-tilpasning */
 @media (max-width: 768px) {
     .nav-links { gap: 20px; }

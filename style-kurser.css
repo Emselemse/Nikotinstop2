@@ -70,10 +70,13 @@ body {
     flex-direction: column;
     width: 100%;
 }
+
+/*fra CoPilot 2026*/
 .page .course:nth-of-type(odd) {
     align-self: flex-start;
     align-items: flex-start;
 }
+/*fra CoPilot 2026*/
 .page .course:nth-of-type(even) {
     align-self: flex-end;
     align-items: flex-end; /* make the header align with the card on the right */
