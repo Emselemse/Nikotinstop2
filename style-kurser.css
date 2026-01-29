@@ -164,7 +164,7 @@ body {
     font-size: 60px;
     font-weight: 700;
 }
-.card-header h3 {
+.visually-hidden h3 {
    display: none;
 }
 
