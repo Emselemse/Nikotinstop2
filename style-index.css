@@ -1,14 +1,17 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     background-color: #F9DC98;
     font-family: 'JetBrains Mono', monospace;
     color: #141414;
 }
+
 /* Navigation */
 .navbar {
     background-color: #141414;
@@ -36,146 +39,39 @@ body {
     width: auto;
 }
 
+/* CTA Button */
 .cta-button a {
-position: absolute;
-  left: 80%;
-  top: 80%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  background: #800000;
-  color: #fff;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 64px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 8px 16px;
-  box-shadow: 0 0 0 2px #800000;
-  text-decoration: none;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: #800000;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 16px;
+    box-shadow: 0 0 0 2px #800000;
+    text-decoration: none;
 }
-
 .cta-button:hover {
-  background-color: #a00000;
+    background-color: #a00000;
 }
+
+/* Hero Section */
 .hero-section {
-  height: 100vh;
-  position: relative;
-  width: 100vw; 
-  width: fixed;
-  height: fixed;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  overflow: hidden;
-  margin-bottom: -50px;
-}
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* default center so small screens look good */
-    gap: 40px;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Reset any hard-coded left-margins used previously for individual/group/medicine cards */
-.page .card.individual,
-.page .card.group,
-.page .card.medicine {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.page .course {
-    display: flex;
-    flex-direction: column;
-    /* Remove width: 100%; */
-}
-
-.page .course:nth-of-type(odd) {
-    align-items: flex-start;
-}
-.page .course:nth-of-type(even) {
-    align-items: flex-end;
-}
-
-.illustration-course {
-    border-radius: 12px;
-    margin-left: 800px;
-    margin-top: -600px;
-    object-fit: cover;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
     margin-bottom: -50px;
-}
-.illustration-course2 {
-    border-radius: 12px;
-    margin-right: 800px;
-    margin-top: -300px;
-    object-fit: cover;
-    margin-bottom: -90px;
-}
-@media (max-width: 768px) {
-    .illustration-course,
-    .illustration-course2 {
-        display: none;
-    }
-}
-@media (max-width: 900px) {
-    .page {
-        align-items: center; /* stack centered on small screens */
-        padding: 12px;
-    }
-    .page .card,
-    .page .card.individual,
-    .page .card.group,
-    .page .card.medicine {
-        width: 95%;
-        align-self: center !important;
-        margin: 20px 0;
-    }
-
-    /* scale down large headers on mobile so they don't overflow */
-    .card-header h2 {
-        font-size: 28px;
-    }
-}
-
-.card {
-    background: #CD7E2F;
-    color: white;
-    padding: 40px;
-    width: 830px;
-    margin: 60px 0;
-}
-
-.card h2 {
-    font-size: 60px;
-    margin-bottom: 30px;
-}
-
-.card ul {
-    list-style: none;
-    margin-bottom: 40px;
-}
-
-.card-header h2 {
-    margin: 0;
-    color: #ffffff; /* white text */
-    font-size: 60px;
-    font-weight: 700;
-}
-
-.card li {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.cta {
-    font-size: 36px;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    -webkit-text-stroke: #000000;
 }
 
 /* Footer */
@@ -190,13 +86,12 @@ position: absolute;
     text-align: center;
     margin-top: 100px;
 }
-
-.footer-info p, .footer-info address {
+.footer-info p,
+.footer-info address {
     font-size: 20px;
     line-height: 1.5;
     font-style: normal;
 }
-
 .footer-socials {
     position: absolute;
     right: 40px;
@@ -205,263 +100,198 @@ position: absolute;
     gap: 25px;
 }
 
-/* Mobil-tilpasning */
+/* Responsive Navigation & Footer */
 @media (max-width: 768px) {
     .nav-links { gap: 20px; }
     .test-header h1 { font-size: 32px; }
     .question-block h2 { font-size: 24px; }
     .option { font-size: 20px; }
-    .footer-socials { position: static; margin-top: 20px; flex-direction: row; }
+    .footer-socials {
+        position: static;
+        margin-top: 20px;
+        flex-direction: row;
+    }
 }
 
-.hero-card {
-    background: #CD8B3E;
+/* Custom Large Card - Copilot 2026 */ 
+.yellow-card {
+    width: 815px;
+    height: 630px;
+    background: #CD7E2F;
     color: #fff;
-    padding: 32px 32px 32px 32px;
-    width: 800px;
-    margin: 60px auto 40px auto;
-    border-radius: 8px;
-    font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-card-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-.hero-card-img {
-    width: 320px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 36px;
-    object-fit: contain;
-    background: transparent;
-}
-
-.hero-card-text {
+    border-radius: 12px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+    padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    text-align: right;
+    transform: translateX(20%);
+    margin-top: 100px;
+    font-family: 'Jacques Francois', serif;
+    position: relative;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-align: left;
 }
-
-.hero-title {
-    font-size: 54px;
-    font-family: 'Times New Roman', Times, serif;
+.yellow-card h2 {
+    font-size: 64px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #fff;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+    margin-top: -100px;
     letter-spacing: 2px;
     text-shadow: 2px 2px 0 #000, 0 0 2px #fff;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 2px #000;
 }
-
-.hero-subtitle {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 18px;
+.yellow-card img {
+    position: absolute;
+    bottom: -50px;
+    right: 370px;
+    width: auto;
+    height: auto;
+}
+.yellow-card .subtitle {
+    font-size: 32px;
     color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.hero-list {
-    list-style: none;
-    padding: 0;
+    text-align: right;
     margin-bottom: 32px;
-    font-size: 28px;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-    margin-left: 0;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
-
-.hero-list li {
-    margin-bottom: 10px;
-}
-
-.hero-cta {
-    font-size: 28px;
-    color: #fff;
-    text-decoration: underline;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 1px;
-    text-align: left;
-    display: block;
-    margin-top: 18px;
-    margin-left: 0;
-    -webkit-text-stroke: 0.5px #000;
-    text-shadow: 1px 1px 0 #000;
-    transition: color 0.2s;
-}
-
-.hero-cta:hover {
-    color: #222;
-    text-decoration: underline;
-}
-
-/* Zigzag layout - CoPilot 2026*/
-.zigzag-container {
-    display: flex;
-    flex-direction: column;
-    gap: 100px; /* større afstand mellem kort */
-    max-width: 900px; /* bredere container */
-    margin: 60px auto 0 auto;
-}
-
-.zigzag-row {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 0;
-    margin-bottom: 0;
-}
-
-.zigzag-row.left .zigzag-img {
-    order: 1;
-}
-.zigzag-row.left .zigzag-card {
-    order: 2;
-    margin-left: -10px;
-}
-.zigzag-row.right .zigzag-img {
-    order: 2;
-}
-.zigzag-row.right .zigzag-card {
-    order: 1;
-    margin-right: -10px;
-}
-
-.zigzag-img {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    min-width: 180px;
-    z-index: 2;
-}
-.zigzag-img img {
-    display: block;
-    max-width: 240px;
-    max-height: 280px;
-    border-radius: 0;
-    box-shadow: none;
-    background: none;
-}
-
-.zigzag-card {
-    min-width: 420px;   /* større kort */
-    max-width: 520px;
-    padding: 48px 40px; /* mere padding */
-    border-radius: 10px;
-    box-shadow: 0 6px 32px rgba(0,0,0,0.12);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1;
-    font-family: 'Jacques Francois', serif;
-}
-
-.hero-card {
-    background: #CD8B3E;
-    color: #fff;
-}
-.unge-card {
-    background: #8B1C1C;
-    color: #fff;
-}
-.test-card {
-    background: #3C314A;
-    color: #fff;
-}
-
-.zigzag-card h2, .hero-title {
-    font-size: 44px; /* større overskrift */
-    font-family: 'Jacques Francois', serif;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 0 #000, 0 0 2px #fff;
-    -webkit-text-stroke: 0.5px #000;
-}
-
-.hero-subtitle {
-    font-size: 28px;
-    margin-bottom: 18px;
-    color: #fff;
-}
-
-.hero-list {
+.yellow-card ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 28px;
-    font-size: 24px;
+    margin: 0 0 32px 0;
+    text-align: right;
+}
+.yellow-card ul li {
+    font-size: 32px;
     color: #fff;
-    font-family: 'Jacques Francois', serif;
-    text-align: left;
-}
-
-.hero-list li {
     margin-bottom: 12px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
-
-.hero-cta {
-    font-size: 24px;
+.yellow-card .yellow-cta {
+    font-size: 36px;
     color: #fff;
     text-decoration: underline;
-    font-family: 'Jacques Francois', serif;
-    letter-spacing: 1px;
-    text-align: left;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-align: right;
     display: block;
-    margin-top: 18px;
-    margin-left: 0;
-    -webkit-text-stroke: 0.5px #000;
+    margin-top: 32px;
+    margin-right: 0;
+    -webkit-text-stroke: 1px #000;
     text-shadow: 1px 1px 0 #000;
     transition: color 0.2s;
 }
-
-.hero-cta:hover {
+.yellow-card .yellow-cta:hover {
     color: #222;
+}
+.red-card {
+    width: 772px;
+    height: 656px;
+    background: #780001;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    position: relative;
+    transform: translateX(120%);
+    margin-top: 100px;
+}
+.red-card h2 {
+    font-size: 40px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #e6e6e6;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #000, 0 0 2px #fff;
+    -webkit-text-stroke: 2px #000;
+}
+.red-card p {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-align: left;
+    line-height: 1.4;
+}
+.red-card blockquote {
+    font-size: 32px;
+    color: #fff;
+    font-style: italic;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    margin-top: 0;
+    border-left: none;
+    quotes: "“" "”";
+    text-align: left;
+}
+.red-card .red-cta {
+    font-size: 36px;
+    color: #fff;
     text-decoration: underline;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-align: right;
+    display: block;
+    margin-top: 32px;
+    margin-right: 0;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 1px 1px 0 #000;
+    transition: color 0.2s;
+}
+.red-card .red-cta:hover {
+    color: #ffb3b3;
+}
+.red-card img {
+    position: absolute;
+    bottom: -300px;
+    left: -800px;
+    width: auto;
+    height: auto;
+}
+.purple-card {
+    width: 678px;
+    height: 992px;
+    background: #35233B;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    transform: translateX(20%);
+    margin-top: 100px;
+    font-family: 'Jacques Francois', serif;
 }
 
-.unge-card p, .test-card p {
-    font-size: 22px;
-    margin-bottom: 16px;
-}
 
-/* Mobil-tilpasning */
-@media (max-width: 900px) {
-    .zigzag-container {
-        max-width: 98vw;
-        gap: 40px;
-    }
-    .zigzag-row {
+/* Responsive: scale down on small screens */
+@media (max-width: 700px) {
+    .yellow-card, .red-card, .purple-card {
         flex-direction: column;
-        align-items: center;
-        gap: 0;
-    }
-    .zigzag-card, .hero-card, .unge-card, .test-card {
-        max-width: 98vw;
-        min-width: 0;
-        margin: 0;
+        transform: translateX(0);
+        width: 98vw;
+        height: auto;
+        min-height: 320px;
         padding: 18px 10px;
     }
-    .zigzag-img {
-        margin: 0 0 12px 0;
-        min-width: 0;
+    .yellow-card img{
+        display: none;
     }
-    .zigzag-img img {
-        max-width: 140px;
-        max-height: 140px;
-    }
-    .zigzag-card h2, .hero-title { font-size: 26px; }
-    .hero-subtitle, .hero-list, .hero-cta, .unge-card p, .test-card p { font-size: 16px; }
+    .yellow-card h2 
+    {
+        margin-top: 50px;
+        margin-left: 50px;
+}
 }
