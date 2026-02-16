@@ -13,15 +13,14 @@ body {
 /* Navigation */
 .navbar {
     background-color: #141414;
-    /* Make navbar sticky at top of viewport (except index) */
-    position: sticky;
+    position: sticky; /* Er med til at gøre navbaren følger med, når man scroller */
     top: 0;
-    z-index: 1000;
-    padding: 30px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    z-index: 1000; /*Bestemmer hvad der ligger øverst, når elementer overlapper hinanden (Jo højere tal, jo mere øverst)*/
+    padding: 30px 20px; /*Er luft mellem indhold og kanten (30px =luft lodret, giver høj boks, 20px =luft vandret, giver pæn balance)*/
+    display: flex; /*Den er fleksibel dvs. at den kan ændre sig og ikke er fast (Ændrer på, hvordan elementerne placeres)*/
+    justify-content: center; /* Ligger i midten */
+    gap: 50px; /* Afstand mellem elementerne */
+    flex-wrap: wrap; /* Gør at elementerne kan bryde linjen og komme under hinanden, hvis der ikke er plads (Bruges til responsiv) */
 }
 
 .navbar a {
