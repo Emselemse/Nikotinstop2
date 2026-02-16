@@ -14,26 +14,26 @@ body {
     background-color: #141414;
     /* Make navbar sticky at top of viewport*/
     position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 30px 20px;
+    top: 0; /* position at the top of the screen */
+    z-index: 1000; /* always in front */
+    padding: 30px 20px;  
     display: flex;
     justify-content: center;
     gap: 50px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
-.navbar a {
+.navbar a {  /* normal nav bar */
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
 }
-.navbar b {
+.navbar b {     /*underlined text*/
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: underline;  
 }
 
 /* Hovedindhold */

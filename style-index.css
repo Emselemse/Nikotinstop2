@@ -87,7 +87,7 @@ body {
     box-shadow: 0 0 0 2px #800000;
     text-decoration: none;
 }
-.cta-button:hover {
+.cta-button:hover { /* makes it change color when hovering */
     background-color: #a00000;
 }
 
